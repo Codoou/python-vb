@@ -1,100 +1,51 @@
 {% extends "_layout.html" %}
 {% block content %}
 
-  <div class="home-slider">
-      <div>
-          <div class="slider-item dark-bg" style="background-image:url('images/slider/slider-1.jpg')">
-              <div class="container">
-                  <div class="row">
-                      <div class="col-md-12">
-                          <div class="slide-inner text-left">
-                              <h1 style="color: white">From Timeless to Trendy</h1>
-                              <p>Our designers have it all</p>
-                              <br />
-                              <br />
-                              <br />
-                          </div>
-                      </div>
-                  </div>
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
 
-              </div>
-          </div>
-      </div>
-      <div>
-          <div class="slider-item dark-bg" style="background-image:url('images/slider/slider-2.png')">
-              <div class="container">
-                  <div class="row">
-                      <div class="col-md-3">
-                          <div class="slide-inner text-left">
-                              <h1 style="color: white;">Prom 2020! It's here</h1>
-                              <a href="gown/prom.html" class="btn btn-main">View Favorites</a>
-                              <br />
-                              <br />
-                              <br />
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-      <div>
-          <div class="slider-item dark-bg" style="background-image:url('images/slider/slider-3.jpg'); background-position:50%;background-repeat:no-repeat;">
-              <div class="container">
-                  <div class="slide-inner text-left">
-                      <h1>Make Your Appointment Today</h1>
-                      <p style="color: white;">We can't wait to find your dream gown</p>
-                      <br />
-                      <br />
-                      <br />
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" style="max-height: 35em;;">
 
-                  </div>
-              </div>
-          </div>
+    <div class="item active" style="max-height: 35em;">
+      <img src="/static/images/slider/slider-1.jpg" alt="Los Angeles" style="width:100%;">
+      <div class="carousel-caption">
+        <h3>From Timeless to Trendy</h3>
+        <p>We have it all</p>
       </div>
+    </div>
+
+    <div class="item" style="max-height:  35em;">
+      <img src="/static/images/slider/slider-2.png" alt="Chicago" style="width:100%;">
+      <div class="carousel-caption">
+        <h3>Prom 2020!</h3>
+        <p>It's here</p>
+      </div>
+    </div>
+  
+    <div class="item" style="max-height: 35em;">
+      <img src="/static/images/slider/slider-3.jpg" alt="New York" style="width:100%;">
+      <div class="carousel-caption">
+        <h3>Make Your Appointment Today</h3>
+        <p>We can't wait to find your dream gown</p>
+      </div>
+    </div>
+
   </div>
 
-  <section style="margin-top: 5em; margin-bottom: 2em;">
-      <div style="">
-          <div class="container">
-              <div class="row">
-                  <div class="col-md-4">
-                      <center>
-                          <a href="appointments.htm">
-                              <img src="images/home/champagne.jpg" style="height:250px; width:300px; " />
-                              <br />
-                              <br />
-                              <span style="margin-top: .5em; font-size: large;">
-                                  Private Appointment
-                              </span>
-                          </a>
-                      </center>
-                  </div>
-                  <div class="col-md-4">
-                      <center>
-                          <a href="gown/bridesmaids.html">
-                              <img src="images/home/bridesmaid_header.png" style="height:250px; width:300px; " />
-                              <br />
-                              <br />
-                              <span style="margin-top: .5em; font-size: large;">
-                                  Dress your girls
-                              </span>
-                          </a>
-                      </center>
-                  </div>
-                  <div class="col-md-4">
-                      <center>
-                          <a href="gown/prom.html">
-                              <img src="images/home/prom_header.png" style="height:250px; width:300px; " />
-                              <br />
-                              <br />
-                              <span style="margin-top: .5em; font-size: large;">
-                                  Prom 2020
-                              </span>
-                          </a>
-                      </center>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </section>
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<!--  -->
+
 {% endblock %}
