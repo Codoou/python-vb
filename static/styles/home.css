@@ -450,7 +450,7 @@ footer {
     }
 }
 
-footer {
+/* footer {
     background: #01252d;
     padding: 30px 0;
     color: #fff;
@@ -468,7 +468,7 @@ footer {
 
         footer a:hover {
             color: #fff;
-        }
+        } */
 
 .overly {
     position: relative;
